@@ -36,3 +36,17 @@ if has_number:
     print("Number check: Passed")
 else:
     print("Number check: Failed")
+
+# Check for symbols
+symbols = "!@#$%^&*?"
+
+has_symbol = False
+
+for character in password:
+    if character in symbols:
+        has_symbol = True
+
+if has_symbol:
+    print("Symbol check: Passed")
+else:
+    print("Symbol check: Failed")
