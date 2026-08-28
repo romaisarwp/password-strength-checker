@@ -1,6 +1,9 @@
 print("Password Strength Checker")
 password = input("Enter your password: ")
-print("You entered:", password)
+# password validation
+if password == "":
+    print("Password cannot be empty.")
+    exit()
 # Starting score
 score = 0
 # Check password length
@@ -33,7 +36,6 @@ if has_number:
     score += 1
 else:
     print("Number check: Failed")
-
 # Check for symbols
 symbols = "!@#$%^&*?"
 has_symbol = False
