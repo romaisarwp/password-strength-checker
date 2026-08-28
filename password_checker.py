@@ -23,3 +23,16 @@ if has_uppercase:
     print("Uppercase check: Passed")
 else:
     print("Uppercase check: Failed")
+
+
+# Check for numbers
+has_number = False
+
+for character in password:
+    if character.isdigit():
+        has_number = True
+
+if has_number:
+    print("Number check: Passed")
+else:
+    print("Number check: Failed")
